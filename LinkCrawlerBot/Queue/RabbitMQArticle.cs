@@ -1,4 +1,5 @@
-﻿using LinkCrawlerBot.Entity;
+﻿using System;
+using LinkCrawlerBot.Entity;
 
 namespace LinkCrawlerBot.Queue
 {

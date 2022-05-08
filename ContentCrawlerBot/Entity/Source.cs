@@ -1,7 +1,6 @@
 ﻿using System;
-using System.ComponentModel;
 
-namespace LinkCrawlerBot.Entity
+namespace ContentCrawlerBot.Entity
 {
     public enum Status
     {
@@ -24,7 +23,7 @@ namespace LinkCrawlerBot.Entity
         public string TagDetailSelector { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public Enum Status { get; set; } = Enums.Status.CommonStatus.ACTIVE;
+        public Enum Status { get; set; } = LinkCrawlerBot.Enums.Status.CommonStatus.ACTIVE;
 
         public override string ToString()
         {
