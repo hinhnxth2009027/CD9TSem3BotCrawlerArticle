@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using LinkCrawlerBot.Queue.IQueue;
 using Newtonsoft.Json;
 using RabbitMQ.Client;
@@ -18,7 +19,6 @@ namespace LinkCrawlerBot.Queue
                 autoDelete: false,
                 arguments: null);
             channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
-
             var body = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(rabbitMqArticle));
             
             channel.BasicPublish(exchange: "",

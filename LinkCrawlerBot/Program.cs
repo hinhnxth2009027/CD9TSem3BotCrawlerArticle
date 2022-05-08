@@ -22,7 +22,7 @@ namespace LinkCrawlerBot
                 .WithIdentity("trigger1", "group1")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                    .WithIntervalInHours(1)
+                    .WithIntervalInSeconds(60)
                     .RepeatForever())
                 .Build();
 

@@ -30,7 +30,7 @@ namespace LinkCrawlerBot.Repository
                         LinkSelector = (string)data["LinkSelector"],
                         ContentDetailSelector = (string)data["ContentDetailSelector"],
                         ThumbnailDetailSelector = (string)data["ThumbnailDetailSelector"],
-                        TitleDetailSelector = (string)data["ThumbnailDetailSelector"],
+                        TitleDetailSelector = (string)data["TitleDetailSelector"],
                         DescriptionSelector = (string)data["DescriptionSelector"],
                         RemoveSelector = (string)data["RemoveSelector"],
                         TagDetailSelector = (string)data["TagDetailSelector"],

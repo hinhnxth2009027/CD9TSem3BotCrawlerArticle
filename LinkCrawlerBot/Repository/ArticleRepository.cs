@@ -87,7 +87,7 @@ namespace LinkCrawlerBot.Repository
                 CategoryId = Convert.ToInt32(data["CategoryId"]),
                 Thumbnail = (string)data["Thumbnail"],
                 Content = (string)data["Content"],
-                Description = (string)data["ContentDescription"],
+                Description = (string)data["Description"],
                 CreatedAt = (DateTime)data["CreatedAt"]
             };
         }

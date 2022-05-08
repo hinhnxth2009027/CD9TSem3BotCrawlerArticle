@@ -1,4 +1,10 @@
-﻿using LinkCrawlerBot.Entity;
+﻿using System;
+using System.Text;
+using ContentCrawlerBot.Entity;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace ContentCrawlerBot.Queue
 {
