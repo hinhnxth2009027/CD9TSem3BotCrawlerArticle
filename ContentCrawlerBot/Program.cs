@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Text;
 using System.Threading.Tasks;
-using ContentCrawlerBot.Queue;
-using Newtonsoft.Json.Linq;
 using Quartz;
 using Quartz.Impl;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
 
 namespace ContentCrawlerBot
 {
@@ -27,7 +22,7 @@ namespace ContentCrawlerBot
                 .WithIdentity("trigger1", "group1")
                 .StartNow()
                 .WithSimpleSchedule(x => x
-                    .WithIntervalInSeconds(60)
+                    .WithIntervalInHours(1)
                     .RepeatForever())
                 .Build();
             

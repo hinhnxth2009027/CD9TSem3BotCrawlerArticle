@@ -1048,23 +1048,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thuan\\.nuget\\packages\\": {},
+    "C:\\Users\\5470\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thuan\\CD9TSem3BotCrawlerArticle\\LinkCrawlerBot\\LinkCrawlerBot.csproj",
+      "projectUniqueName": "C:\\Users\\5470\\RiderProjects\\Sem3CD9T\\LinkCrawlerBot\\LinkCrawlerBot.csproj",
       "projectName": "LinkCrawlerBot",
-      "projectPath": "C:\\Users\\thuan\\CD9TSem3BotCrawlerArticle\\LinkCrawlerBot\\LinkCrawlerBot.csproj",
-      "packagesPath": "C:\\Users\\thuan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thuan\\CD9TSem3BotCrawlerArticle\\LinkCrawlerBot\\obj\\",
+      "projectPath": "C:\\Users\\5470\\RiderProjects\\Sem3CD9T\\LinkCrawlerBot\\LinkCrawlerBot.csproj",
+      "packagesPath": "C:\\Users\\5470\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\5470\\RiderProjects\\Sem3CD9T\\LinkCrawlerBot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\thuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\5470\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1131,7 +1131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -80,3 +80,5 @@ C:\Users\thuan\CD9TSem3BotCrawlerArticle\ContentCrawlerBot\obj\Debug\net5.0\Cont
 C:\Users\thuan\CD9TSem3BotCrawlerArticle\ContentCrawlerBot\obj\Debug\net5.0\ContentCrawlerBot.genruntimeconfig.cache
 C:\Users\thuan\CD9TSem3BotCrawlerArticle\ContentCrawlerBot\bin\Debug\net5.0\Elasticsearch.Net.dll
 C:\Users\thuan\CD9TSem3BotCrawlerArticle\ContentCrawlerBot\bin\Debug\net5.0\Nest.dll
+C:\Users\5470\RiderProjects\Sem3CD9T\ContentCrawlerBot\bin\Debug\net5.0\Elasticsearch.Net.dll
+C:\Users\5470\RiderProjects\Sem3CD9T\ContentCrawlerBot\bin\Debug\net5.0\Nest.dll

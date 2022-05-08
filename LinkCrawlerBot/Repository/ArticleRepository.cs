@@ -9,8 +9,7 @@ namespace LinkCrawlerBot.Repository
 {
     public class ArticleRepository : IArticleRepository
     {
-        private string SqlTruncateTableArticles = "Truncate TABLE Articles"; 
-        private string SqlFindByLink = "SELECT * FROM Articles WHERE Url = '@Link'";
+        private string SqlTruncateTableArticles = "Truncate TABLE Articles";
         private string SqlFindAll = "SELECT * FROM Articles";
         
         public void TruncateArticles()
@@ -62,10 +61,10 @@ namespace LinkCrawlerBot.Repository
             {
                 using (var cnn = ConnectionHelper.GetConnection())
                 {
+                    var SqlFindByLink = $"SELECT * FROM Articles WHERE Url = '{linkSource}'";
                     cnn.Open();
                     var command = new SqlCommand(SqlFindByLink, cnn);
                     command.Prepare();
-                    command.Parameters.AddWithValue("@Link", linkSource);
                     var data = command.ExecuteReader();
                     return data.Read() ? Create(data) : null;
                 }
