@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text;
+using ContentCrawlerBot.Queue;
+using Newtonsoft.Json.Linq;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
@@ -25,13 +27,30 @@ namespace ContentCrawlerBot
                 var i = 0;
                 var body = ea.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-
-                Console.WriteLine(message);
+                var rabbitMqArticle = JsonToRabbitArticle(JObject.Parse(message));
+                Console.WriteLine(rabbitMqArticle.ToString());
             };
             channel.BasicConsume(queue: "crawler",
                 autoAck: true,
                 consumer: consumer);
             Console.ReadLine();
+        }
+
+
+        private static RabbitMqArticle JsonToRabbitArticle(JObject data)
+        {
+            Console.WriteLine(data);
+            return new RabbitMqArticle()
+            {
+                Url = (string)data["Url"],
+                TitleDetailSelector = (string)data["TitleDetailSelector"],
+                DescriptionSelector = (string)data["DescriptionSelector"],
+                ContentDetailSelector = (string)data["ContentDetailSelector"],
+                ThumbnailDetailSelector = (string)data["ThumbnailDetailSelector"],
+                RemoveSelector = (string)data["RemoveSelector"],
+                TagDetailSelector = (string)data["TagDetailSelector"],
+                SourceId = Convert.ToInt32(data["SourceId"]),
+            };
         }
     }
 }

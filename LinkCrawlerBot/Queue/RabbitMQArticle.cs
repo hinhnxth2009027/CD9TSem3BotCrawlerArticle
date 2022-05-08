@@ -13,6 +13,8 @@ namespace LinkCrawlerBot.Queue
         public string TagDetailSelector { get; set; }
         public int SourceId { get; set; }
 
+        public int CategoryId { get; set; }
+
         public RabbitMQArticle(string url, Source source)
         {
             this.Url = url;
@@ -23,11 +25,12 @@ namespace LinkCrawlerBot.Queue
             this.RemoveSelector = source.RemoveSelector;
             this.TagDetailSelector = source.TagDetailSelector;
             this.SourceId = source.Id;
+            this.CategoryId = source.CategoryId;
         }
 
         public override string ToString()
         {
-            return $"url : {this.Url} - title : {this.TitleDetailSelector} - thumb : {this.ThumbnailDetailSelector} - sourceId : {this.SourceId}";
+            return $"url : {this.Url} - title : {this.TitleDetailSelector} - thumb : {this.ThumbnailDetailSelector} - sourceId : {this.SourceId} - cateId : {this.CategoryId}";
         }
     }
 }

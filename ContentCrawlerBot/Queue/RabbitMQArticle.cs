@@ -12,6 +12,10 @@ namespace ContentCrawlerBot.Queue
         public string RemoveSelector { get; set; }
         public string TagDetailSelector { get; set; }
         public int SourceId { get; set; }
+        
+        public int CategoryId { get; set; }
+        
+        public RabbitMqArticle(){}
 
         public RabbitMqArticle(string url, Source source)
         {
@@ -23,11 +27,12 @@ namespace ContentCrawlerBot.Queue
             this.RemoveSelector = source.RemoveSelector;
             this.TagDetailSelector = source.TagDetailSelector;
             this.SourceId = source.Id;
+            this.CategoryId = source.CategoryId;
         }
 
         public override string ToString()
         {
-            return $"url : {this.Url} - title : {this.TitleDetailSelector} - thumb : {this.ThumbnailDetailSelector} - sourceId : {this.SourceId}";
+            return $"url : {this.Url} - title : {this.TitleDetailSelector} - thumb : {this.ThumbnailDetailSelector} - sourceId : {this.SourceId} - cateId : {this.CategoryId}";
         }
     }
 }
