@@ -10,8 +10,8 @@ namespace ContentCrawlerBot.Util
         public static string IndexName = "articles";
         public static string DefaultIndexName = "example-index";
         public static string ElasticSearchUser = "elastic";
-        public static string ElasticSearchPass = "u6gzVKIowdqLw6K6hpJfea6F";
-        public static string CloudId = "CD9T:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJGE0MWQ2M2ZhMTFmYjQ4YzQ4NDc1OTFjMDRlYjkyNGExJGNjYjNmOTM1Y2M5ZjQ3ZDE5MjBhYjBkYTVmMzE1NWFh";
+        public static string ElasticSearchPass = "SlroOmtlKfAQjmKmwXrkYI1h";
+        public static string CloudId = "CD9T:YXNpYS1zb3V0aGVhc3QxLmdjcC5lbGFzdGljLWNsb3VkLmNvbSQ5ZDJlYTgzNjIyZmQ0MWIwYWJiMmE3Y2IxNDc4N2E5YSQ1YzQzZWE2Yjk2ODQ0YjE3YTA3NWE2ODY4MjQwYWQwNA==";
         public static ElasticClient GetInstance()
         {
             if (searchClient == null)
